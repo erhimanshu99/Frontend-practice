@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Survey Form</title>
+        <style>
+            body{
+                background-color: skyblue;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+            }
+            form{
+                background-color: #fff;
+                max-width: 700px;
+                margin: 50px auto;
+                padding: 40px, 20px;
+                box-shadow: 2px, 5px, 10px rgba(0,0,0,0.5);
+            }
+            .form-control{
+                text-align: left;
+                margin-bottom: 25px;
+            }
+            .form-control label{
+                display: block;
+                margin-bottom: 10px;
+            }
+            .form-control input,
+            .form-control select,
+            .form-control textarea{
+                border: 1px solid #777;
+                border-radius: 2px;
+                font-family: inherit;
+                padding: 10px;
+                display: block;
+                width: 95%;
+            }
+            .form-control input [type="radio"],
+            .form-control input[type="checkbox"]{
+                display: inline-block;
+                width: auto;
+            }
+            button{
+                background-color: #05c46b;
+                border: 1px solid #777;
+                border-radius: 2px;
+                font-family: inherit;
+                font-size: 21px;
+                display: block;
+                width: 100%;
+                margin-top: 50px;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> GIHS Survey Form </h1>
+        <form id="form">
+            <div class="form-control">
+                <label for="name" id="lable-name">
+                    Name
+                </label>
+                <input type="text" id="name"
+                placeholder="Enter Your Name"/>
+            </div>
+            <div class="form-control">
+                <label for="email" id="lable-email">
+                    Email
+                </label>
+                <input type="email" id="email"
+                placeholder="Enter Your Email Id"/>
+            </div>
+            <div class="form-control">
+                <label for="age" id="lable-age">
+                    Age
+                </label>
+                <input type="text" id="age"
+                placeholder="Enter Your Age"/>
+            </div>
+            <div class="form-control">
+                <label for="role" id="lable-role">
+                    Which option best describe you?
+                </label>
+                <select name="role" id="role">
+                    <option value="student">Student</option>
+                    <option value="intern">Intern</option>
+                    <option value="parent">Parent</option>
+                    <option value="professor">Professor</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label>Would you recommend GIHS to your friends?</label>
+                <label for="recommend-1">
+                    <input type="radio" name="recommend" id="recommend-1">Yes
+                </input>
+                </label>
+                <label for="recommend-2">
+                    <input type="radio" name="recommend" id="recommend-2">No
+                </input>
+                </label>
+                <label for="recommend-3">
+                    <input type="radio" name="recommend" id="recommend-3">May be
+                </input>
+                </label>
+            </div>
+            <div class="form-control">
+                <label>Applying for?</label>
+                <label for="inp-1">
+                    <input type="checkbox" name="inp">Admission</input>
+                </label>
+                <label for="inp-2">
+                    <input type="checkbox" name="inp">Internship</input>
+                </label>
+                <label for="inp-3">
+                    <input type="checkbox" name="inp">Professor</input>
+                </label>
+                <label for="inp-4">
+                    <input type="checkbox" name="inp">Peon</input>
+                </label>
+            </div>
+            <div class="form-control">
+                <label for="comments">Any comments or suggestions</label>
+                <textarea name="comment" id="comment" placeholder="Enter your comment here">
+                </textarea>
+            </div>
+            <button type="submit" value="submit">Submit</button>
+        </form>
+    </body>
+</html>
